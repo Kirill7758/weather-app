@@ -3,7 +3,6 @@ import {useEffect} from 'react'
 export const useAPI = (card, setObjCard) => {
     const API_KEY = 'a5453c530d029c9500231fc1a65b49df';
     useEffect(() => {
-        console.log(card)
         if (!!card) {
             const [country] = card.split(',')
             fetch(`https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${API_KEY}`)

@@ -27,7 +27,6 @@ const WeatherDay = ({coord, today}) => {
         const [{main}] = weather
         const {img} = imgArr.find(({dec}) => dec === main) || {img: ''}
         const active = today === dayWeek ? 'active' : ''
-        console.log(today, dayWeek)
         return(
             <div className={"weather-day " + active} key={'weather-day-' + idx}>
                 <h3 className="day-title">{dayWeek}</h3>
@@ -37,7 +36,6 @@ const WeatherDay = ({coord, today}) => {
             </div>
         )
     })
-    console.log(listDays)
     return(
         <>
             {listDays}
