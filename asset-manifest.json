@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3dfd6515.chunk.css",
+    "main.js": "/static/js/main.369efbb5.chunk.js",
+    "main.js.map": "/static/js/main.369efbb5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7ecb0647.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7ecb0647.js.map",
+    "static/js/2.6ac33311.chunk.js": "/static/js/2.6ac33311.chunk.js",
+    "static/js/2.6ac33311.chunk.js.map": "/static/js/2.6ac33311.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0035549b38adfa83fa2f735833f5b097.js": "/precache-manifest.0035549b38adfa83fa2f735833f5b097.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3dfd6515.chunk.css.map": "/static/css/main.3dfd6515.chunk.css.map",
+    "static/js/2.6ac33311.chunk.js.LICENSE.txt": "/static/js/2.6ac33311.chunk.js.LICENSE.txt",
+    "static/media/001-empire-state-building.svg": "/static/media/001-empire-state-building.2f413c59.svg",
+    "static/media/001-sky-night.svg": "/static/media/001-sky-night.89ef778b.svg",
+    "static/media/001-sky.svg": "/static/media/001-sky.acd8aae3.svg",
+    "static/media/002-moon.svg": "/static/media/002-moon.ba638086.svg",
+    "static/media/002-sun.svg": "/static/media/002-sun.2110aa2c.svg",
+    "static/media/003-rain-night.svg": "/static/media/003-rain-night.869b50be.svg",
+    "static/media/003-snow.svg": "/static/media/003-snow.0f0243b4.svg",
+    "static/media/004-rain-clouds-night.svg": "/static/media/004-rain-clouds-night.7d2f80e1.svg",
+    "static/media/004-water.svg": "/static/media/004-water.77078e60.svg",
+    "static/media/005-rain.svg": "/static/media/005-rain.1493d0b7.svg",
+    "static/media/IMG_0785.jpeg": "/static/media/IMG_0785.3a7139fb.jpeg",
+    "static/media/back-white.svg": "/static/media/back-white.aeebca5b.svg",
+    "static/media/back.svg": "/static/media/back.265e3007.svg",
+    "static/media/CardInfo.css": "/static/media/city-1.b0054fe9.png",
+    "static/media/icons8-react.svg": "/static/media/icons8-react.9e3a25e1.svg",
+    "static/media/CardInfoDark.css": "/static/media/nigth-city.82b9f09a.jpg",
+    "static/media/Sidebar.css": "/static/media/sidebar-bg-1.29028339.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ecb0647.js",
+    "static/js/2.6ac33311.chunk.js",
+    "static/css/main.3dfd6515.chunk.css",
+    "static/js/main.369efbb5.chunk.js"
+  ]
+}
