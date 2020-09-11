@@ -1,0 +1,20 @@
+.main.light .prev,
+.main.light .next {
+    background: #747474;
+}
+
+.main.light .prev.disable,
+.main.light .next.disable {
+    background: #d5d3d3;
+}
+
+.slider-card.light {
+    background-color: white;
+    color: black;
+    /*border: 1px solid black;*/
+    box-shadow: 0 0 10px 5px #d5d3d3;
+}
+
+.slider-card.light .card-temperature::after {
+    border: 3px solid black;
+}

@@ -1,0 +1,1 @@
+export {useClass} from './useClass'

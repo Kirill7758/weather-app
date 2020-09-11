@@ -1,0 +1,23 @@
+.header.light {
+    background: #ffffff;
+    color: black;
+    box-shadow: 0 0 3px 1px #6e6e6f;
+}
+
+.header.light .link {
+    color: black;
+}
+
+.burger-part.light {
+    background: black;
+}
+
+.switcher.light {
+    /*border: 1px solid black;*/
+    background: #747474;
+}
+
+.switcher.light .switcher-circle {
+    transform: translate(-3%, -10%);
+    background: #332755;
+}

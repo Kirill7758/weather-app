@@ -1,0 +1,36 @@
+.search-page.dark {
+    /*background: linear-gradient(180deg, #9f80e9, #372470);*/
+    background: linear-gradient(-180deg, #383838, #181819);
+}
+
+.search-page.dark .search-title {
+    color: #ffffff;
+}
+
+.search-page.dark .search-decor {
+    background: linear-gradient(85deg, #dbd224, #181819);
+}
+
+.search-page.dark .search-decor-right {
+    background: linear-gradient(-85deg, #feb442, #181819);
+}
+
+.search-page.dark .search-city {
+    color: #ffffff;
+}
+
+.search-page.dark .btn {
+    background: #383838;
+    box-shadow: 0 0 2px 1px #5f5f5f;
+    /*box-shadow: none;*/
+}
+
+.search-page.dark .search {
+    /*box-shadow: 0 0 5px 1px #181819;*/
+    box-shadow: none;
+    background-color: #181819;
+}
+
+.search-page.dark .search-input {
+    background: transparent;
+}

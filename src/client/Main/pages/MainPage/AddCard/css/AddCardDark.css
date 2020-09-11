@@ -1,0 +1,9 @@
+.card-add.dark {
+    /*background: #3a518b;*/
+    background: linear-gradient(-90deg, #383838, #181819, #181819);
+}
+
+.card-plus.dark {
+    /*background: linear-gradient(to right, #fff39d, #ffafa6);*/
+    background: #6d6d6d;
+}

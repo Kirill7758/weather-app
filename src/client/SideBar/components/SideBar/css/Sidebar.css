@@ -1,0 +1,150 @@
+.side-bar {
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    /*background: rgba(147, 145, 145, 0.65);*/
+    font-family: 'Montserrat', sans-serif;
+    z-index: 3;
+}
+
+.hide {
+    left: -100%;
+}
+
+.side-col {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /*box-shadow: 0 0 10px 5px #d5d3d3;*/
+    box-sizing: border-box;
+    color: black;
+}
+
+.info {
+    width: 100%;
+    height: 250px;
+    background: url("../../../../../assets/img/jpg/sidebar-bg-1.jpg") no-repeat center;
+    background-size: cover;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.info::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(43, 43, 43, 0.66);
+}
+
+.info-img-block {
+    overflow: hidden;
+    /*background: url("../../../../assets/img/jpg/IMG_0785.jpeg") no-repeat center;*/
+    /*background-size: cover;*/
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+.info-img {
+    width: 100px;
+}
+
+.info-title, .info-user {
+    position: relative;
+    z-index: 2;
+}
+
+.info-title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+    color: white;
+}
+
+.info-user {
+    width: 100%;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    /*background-color: rgba(72,249,225,0.29);*/
+}
+
+.info-user-name, .info-user-email {
+    font-weight: lighter;
+    font-size: 20px;
+    margin: .5rem 0;
+}
+
+@media screen and (max-width: 414px) {
+    .side-bar {
+        width: 414px;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .side-bar {
+        width: 411px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .side-bar {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .side-bar {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .side-bar {
+        width: 320px;
+    }
+
+    .info-img-block {
+        overflow: visible;
+        position: relative;
+        /*height: 50px;*/
+        width: 150px;
+        transform: scale(1.5);
+    }
+
+    .info-img {
+        position: absolute;
+        width: 100%;
+        left: 1rem;
+        bottom: 2.5rem;
+        border-radius: 3px;
+    }
+
+    .info-user {
+        background: rgba(95, 95, 95, 0.45);
+        margin: 0;
+    }
+
+    .info-user-contact {
+        position: relative;
+        z-index: 2;
+        line-height: 1;
+        margin-top: 1rem;
+    }
+}

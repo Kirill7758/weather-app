@@ -1,0 +1,12 @@
+.burger-part.dark {
+    background-color: white;
+}
+
+.header.dark .link {
+    color: white;
+}
+
+.header.dark {
+    background: #181819;
+    color: white;
+}

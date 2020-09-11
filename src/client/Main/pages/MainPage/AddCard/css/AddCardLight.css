@@ -1,0 +1,9 @@
+.card-add.light {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.card-plus.light {
+    background-color: #26de7f;
+    /*border: 1px solid black;*/
+}

@@ -1,0 +1,50 @@
+.main-card.light {
+    background: white;
+}
+
+.main-card.light .card {
+    /*box-shadow: inset 0 0 3px 2px #d5d3d3;*/
+}
+
+.main-card.light .comeback-title {
+    color: black;
+}
+
+.main-card.light .comeback-arrow {
+    background: #d5d3d3;
+}
+
+.main-card.light .decor {
+    top: 45%;
+    right: 35%;
+    background: linear-gradient(to bottom, #332755, #e8ebfd);
+}
+
+.main-card.light .weather-days {
+    background: linear-gradient(to bottom, #fff, #e8ebfd);
+}
+
+.main-card.light .weather-temperature::after {
+    border-color: white;
+}
+
+.main-card.light .day-temperature::after {
+    border-color: black;
+}
+
+.main-card.light .weather-info {
+    background: url("../../../../../assets/img/jpg/nigth-city.jpg") no-repeat center;
+    position: relative;
+    z-index: -1;
+}
+
+.main-card.light .weather-info::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 23, 23, 0.51);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

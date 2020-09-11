@@ -1,0 +1,19 @@
+.main.dark .prev{
+    background: #5f5f5f;
+}
+
+.main.dark .next {
+    background: #181819;
+}
+
+.main.dark .prev.disable,
+.main.dark .next.disable {
+    /*background: #6d6d6d;*/
+    display: none;
+}
+
+.slider-card.dark {
+    /*background: linear-gradient(190deg, #09077a, #6a1a87);*/
+    background: #181819;
+    color: white;
+}
