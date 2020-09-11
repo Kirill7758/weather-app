@@ -2,7 +2,7 @@ import React, {useEffect, useMemo, useState} from "react";
 import Header from "../Header/components/Header";
 import {useClass} from "../../shared/hooks/useClass";
 import Sidebar from "../SideBar/components/SideBar";
-import {Route} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import CardInfo from "../../shared/CardInfo/components/CardInfo";
 import Main from "../Main/pages/MainPage/Main";
 import AddCity from "../Main/pages/AddCityPage/AddCity";
@@ -32,20 +32,28 @@ const Client = () => {
                 switcher={switcher} theme={theme} visible={visible}
                 setSwitcher={setSwitcher} setBurger={setBurger} setToday={setToday}
             />
-            <Route exact path='/'>
-                <Main
-                    switcher={switcher} arrCards={arrCards}
-                    setObjCard={setObjCard} setShow={setShow}
-                />
-            </Route>
-            {hashComponentCardInfo}
-            <Route path='/add-city'>
-                <AddCity
-                    switcher={theme} objCard={objCard} resultShow={resultShow} show={show}
-                    setObjCard={setObjCard} setShow={setShow}
-                    addCard={() => addCard(objCard, arrCards, setArrCards)}
-                />
-            </Route>
+            <Switch>
+                <Route exact path='/'>
+                    <Main
+                        switcher={switcher} arrCards={arrCards}
+                        setObjCard={setObjCard} setShow={setShow}
+                    />
+                </Route>
+                {hashComponentCardInfo}
+                <Route path='/add-city'>
+                    <AddCity
+                        switcher={theme} objCard={objCard} resultShow={resultShow} show={show}
+                        setObjCard={setObjCard} setShow={setShow}
+                        addCard={() => addCard(objCard, arrCards, setArrCards)}
+                    />
+                </Route>
+                <Route path="*">
+                    <Main
+                        switcher={switcher} arrCards={arrCards}
+                        setObjCard={setObjCard} setShow={setShow}
+                    />
+                </Route>
+            </Switch>
             <Sidebar burger={burger} theme={theme}/>
         </>
     )

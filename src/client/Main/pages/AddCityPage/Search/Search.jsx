@@ -23,11 +23,12 @@ const Search = (props) => {
         fetch('https://restcountries.eu/rest/v2/all')
             .then((city) => city.json())
             .then((res) => {
+                console.log(res)
                 const newArr = res.map(({name, capital}) => `${name.toUpperCase()}, ${capital.toUpperCase()}`)
                 setCountryName(newArr)
             })
         setListCountryShow(false)
-    }, [setListCountryShow])
+    }, [])
 
     const onChangeInput = (item) => {
         setValue(item)
