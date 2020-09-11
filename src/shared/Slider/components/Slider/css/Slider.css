@@ -230,7 +230,7 @@
     }
 
     .slider-block {
-        position: static;
+        position: relative;
         margin-top: 2rem;
     }
 
