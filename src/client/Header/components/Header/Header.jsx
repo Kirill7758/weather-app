@@ -11,7 +11,7 @@ const Header = ({theme, switcher, setSwitcher, setBurger, visible, setToday}) =>
     const [dayWeek, month, day, year] = date.split(' ')
     useEffect(() => {
         setToday(dayWeek)
-    }, [dayWeek])
+    }, [dayWeek, setToday])
     return(
         <header className={"header " + theme}>
             <HeaderStart

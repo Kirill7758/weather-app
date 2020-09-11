@@ -14,6 +14,8 @@ export const slide = (className, childLength, position, setPosition, count = 2) 
                     setPosition(position - interval)
                 }
                 break;
+            default:
+                break;
         }
     }
 }

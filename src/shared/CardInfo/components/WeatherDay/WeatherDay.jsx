@@ -1,16 +1,11 @@
 import React, {useEffect, useState} from "react";
 import {config} from "../../../config/config";
-import Slider from "../../../Slider/components/Slider";
 
 const WeatherDay = ({coord, today}) => {
     const {lat, lon} = coord
     const {API_KEY, week, imgArr} = config
 
     const [days, setDays] = useState([])
-    // const [activeDay, setActiveDay] = useState('')
-    //
-    // setActiveDay(today)
-
 
     useEffect(() => {
         fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=Tus&appid=${API_KEY}`)

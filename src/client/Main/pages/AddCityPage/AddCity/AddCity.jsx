@@ -10,7 +10,7 @@ const AddCity = ({switcher, objCard, setObjCard, addCard, setShow, resultShow}) 
     const [value, setValue] = useState('')
     const [card, setCard] = useState('')
     const [listCountryShow, setListCountryShow, result] = useClass(true, '', 'hide')
-    const [animate, setAnimate, animateResult] = useClass(false, 'add-card')
+    const [ , setAnimate, animateResult] = useClass(false, 'add-card')
 
     useAPI(card, setObjCard)
 

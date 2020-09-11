@@ -16,7 +16,7 @@ const Slider = ({children}) => {
     const [disableNext, setDisableNext, disableNextClass] = useClass(false, 'disable')
     // eslint-disable-next-line no-unused-vars
     const [disablePrev, setDisablePrev, disablePrevClass] = useClass(false, 'disable')
-    const [bool, setClick, click] = useClass(false, 'click')
+    const [, setClick, click] = useClass(false, 'click')
 
     const styleTranslate = {
         transform: `translateX(${translateX}px)`,
@@ -44,7 +44,7 @@ const Slider = ({children}) => {
     useEffect(() => {
         changeActiveBtn((translateX === (hiddenElements.length-count) * -interval) || hiddenElements.length === 0, setDisableNext)
         changeActiveBtn(translateX === 0, setDisablePrev)
-    }, [translateX, hiddenElements])
+    }, [translateX, hiddenElements, count, interval, setDisableNext, setDisablePrev])
 
     const arrows = [
         {

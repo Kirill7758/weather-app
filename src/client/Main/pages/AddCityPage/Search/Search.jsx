@@ -27,7 +27,7 @@ const Search = (props) => {
                 setCountryName(newArr)
             })
         setListCountryShow(false)
-    }, [])
+    }, [setListCountryShow])
 
     const onChangeInput = (item) => {
         setValue(item)
