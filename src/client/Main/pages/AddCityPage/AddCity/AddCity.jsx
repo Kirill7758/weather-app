@@ -16,7 +16,7 @@ const AddCity = ({switcher, objCard, setObjCard, addCard, setShow, resultShow}) 
 
     const btn =
         <NavLink to='/' className='link-btn'><
-            button className="btn" onClick={addCard}>Add Country +</button>
+            input className="btn" onClick={addCard} value='Add Country +'/>
         </NavLink>;
 
     return(

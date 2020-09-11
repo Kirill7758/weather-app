@@ -13,7 +13,6 @@ const MainCard = ({switcher, btn, obj = {}, animate}) => {
     } = obj;
     const {imgArr} = config
     const checkNight = new Date().getHours()
-    // console.log(checkNight)
     const {img} = imgArr.find(({dec, at, from}) =>
         ((checkNight >= at || checkNight <= from) && dec === description) || dec === description) || {img: ''}
 
