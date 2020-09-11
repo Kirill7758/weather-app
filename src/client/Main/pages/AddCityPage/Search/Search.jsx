@@ -27,8 +27,7 @@ const Search = (props) => {
                 const newArr = res.map(({name, capital}) => `${name.toUpperCase()}, ${capital.toUpperCase()}`)
                 setCountryName(newArr)
             })
-        setListCountryShow(false)
-    }, [setCountryName])
+    },[setCountryName])
 
     const onChangeInput = (item) => {
         setValue(item)
