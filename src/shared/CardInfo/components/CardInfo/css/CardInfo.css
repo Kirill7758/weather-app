@@ -226,28 +226,27 @@
         opacity: 0;
     }
 
-    50% { transform: rotate(5deg); }
-
-    55% { transform: rotate(-5deg);}
-
-    60% { transform: rotate(5deg); }
-
-    65% { transform: rotate(-5deg);}
-
-    70% { transform: rotate(5deg); }
-
-    75% { transform: rotate(-5deg);}
-
-    80% { transform: rotate(5deg); }
-
-    85% { transform: rotate(-5deg);}
-
-    90% { transform: rotate(5deg); }
-
     to {
         margin-top: 0;
         opacity: 1;
     }
+    /*50% { transform: rotate(5deg); }*/
+
+    /*55% { transform: rotate(-5deg);}*/
+
+    /*60% { transform: rotate(5deg); }*/
+
+    /*65% { transform: rotate(-5deg);}*/
+
+    /*70% { transform: rotate(5deg); }*/
+
+    /*75% { transform: rotate(-5deg);}*/
+
+    /*80% { transform: rotate(5deg); }*/
+
+    /*85% { transform: rotate(-5deg);}*/
+
+    /*90% { transform: rotate(5deg); }*/
 }
 
 @keyframes comeback {
@@ -319,6 +318,12 @@
 }
 
 @media screen and (max-width: 425px) {
+    .weather-info {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
     .weather-days {
         padding: 2rem 0;
     }
@@ -333,7 +338,13 @@
     }
 
     .city-block {
+        margin-top: 0;
+        margin-bottom: 2rem;
         margin-right: 1rem;
+    }
+
+    .weather-city-title {
+        font-size: 28px;
     }
 
     .comeback-block {
@@ -344,6 +355,10 @@
     main.main-card.dark .decor {
         top: 5%;
         right: 30%;
+    }
+
+    main.main-card.light .decor {
+        display: none;
     }
 
     @keyframes decor {

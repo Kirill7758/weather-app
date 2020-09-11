@@ -16,11 +16,11 @@ const AddCity = ({switcher, objCard, setObjCard, addCard, setShow, resultShow}) 
 
     const btn =
         <NavLink to='/' className='link-btn'><
-            input className="btn" onClick={addCard} value='Add Country +'/>
+            span className="btn" onClick={addCard}>Add Country +</span>
         </NavLink>;
 
     return(
-        <div className={"search-page " + switcher}>
+        <section className={"search-page " + switcher}>
             <h3 className="search-title">Search Country</h3>
             <Search
                 value={value}
@@ -42,7 +42,7 @@ const AddCity = ({switcher, objCard, setObjCard, addCard, setShow, resultShow}) 
             </div>
             <div className="search-decor" />
             <div className="search-decor-right" />
-        </div>
+        </section>
     )
 }
 
