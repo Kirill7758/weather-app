@@ -5,7 +5,8 @@ export const useAPI = (card, setObjCard) => {
     useEffect(() => {
         console.log(card)
         if (!!card) {
-            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${card}&appid=${API_KEY}`)
+            const [country] = card.split(',')
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${API_KEY}`)
                 .then((res) => res.json())
                 .then((res) => {
                     if (res.cod <= 200) {
