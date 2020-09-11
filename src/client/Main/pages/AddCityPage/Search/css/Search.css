@@ -173,6 +173,10 @@
         right: 45%;
         transform: scale(8);
     }
+
+    div.search-page .btn {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 425px) {

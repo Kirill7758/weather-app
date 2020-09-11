@@ -31,6 +31,8 @@
 }
 
 .btn {
+    display: block;
+    width: max-content;
     text-transform: uppercase;
     /*letter-spacing: 2px;*/
     font-size: 14px;
@@ -50,7 +52,7 @@
 }
 
 .link-btn {
-    /*width: max-content;*/
+    width: max-content;
     margin: 0 auto;
 }
 
